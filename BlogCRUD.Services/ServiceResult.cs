@@ -34,11 +34,21 @@ namespace BlogCRUD.Services
             };
         }
 
+        public static ServiceResult<T> Failure(List<string> errors,HttpStatusCode status = HttpStatusCode.BadRequest)
+        {
+            return new ServiceResult<T>()
+            {
+                Errors = errors,
+                StatusCode = status
+            };
+        }
+
+
         public static ServiceResult<T> Failure(string errors, HttpStatusCode status = HttpStatusCode.BadRequest)
         {
             return new ServiceResult<T>
             {
-                Errors = new List<string> { errors },
+                Errors =[errors],
                 StatusCode = status
             };
         }
@@ -73,15 +83,24 @@ namespace BlogCRUD.Services
             };
         }
 
-        public static ServiceResult Failure(string errors, HttpStatusCode status = HttpStatusCode.BadRequest)
+        public static ServiceResult Failure(List<string> errors, HttpStatusCode status = HttpStatusCode.BadRequest)
         {
-            return new ServiceResult
+            return new ServiceResult()
             {
-                Errors = new List<string> { errors },
+                Errors = errors,
                 StatusCode = status
             };
         }
 
+
+        public static ServiceResult Failure(string errors, HttpStatusCode status = HttpStatusCode.BadRequest)
+        {
+            return new ServiceResult
+            {
+                Errors =  [errors] ,
+                StatusCode = status
+            };
+        }
 
     }
 }

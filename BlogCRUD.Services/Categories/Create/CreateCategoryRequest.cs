@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogCRUD.Services.Post;
+namespace BlogCRUD.Services.Categories.Create;
 
-public record CreatePostRequest(string Title, string Content);
-  
-
+public record CreateCategoryRequest(string Name);

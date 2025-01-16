@@ -1,4 +1,5 @@
 ﻿
+using BlogCRUD.Repository.Categories;
 using BlogCRUD.Repository.Post;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,7 @@ namespace BlogCRUD.Repository.Extensions
 
            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
            services.AddScoped<IPostRepository, PostRepository>();
+           services.AddScoped<ICategoryRepository, CategoryRepository>();
            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;

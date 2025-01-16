@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlogCRUD.Services.Post;
+namespace BlogCRUD.Services.Post.Create;
 
-public record UpdatePostRequest(string Title, string Content);
-    
+public record CreatePostRequest(string Title, string Content);
+
+

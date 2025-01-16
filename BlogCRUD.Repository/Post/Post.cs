@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BlogCRUD.Repository.Categories;
 
 namespace BlogCRUD.Repository.Post
 {
@@ -12,5 +13,10 @@ namespace BlogCRUD.Repository.Post
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; }
+
+        //Relation
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } = default!;
     }
 }

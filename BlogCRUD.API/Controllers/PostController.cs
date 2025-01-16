@@ -1,10 +1,12 @@
 ﻿using BlogCRUD.Services.Post;
+using BlogCRUD.Services.Post.Create;
+using BlogCRUD.Services.Post.Update;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogCRUD.API.Controllers
 {
-   
+
     public class PostController(IPostService postService) : CustomControllerBase
     {
         
@@ -26,6 +28,13 @@ namespace BlogCRUD.API.Controllers
         public async Task<IActionResult> Post([FromBody] CreatePostRequest createPostRequest)
         {
             var serviceResult = await postService.CreateAsync(createPostRequest);
+            return CreateActionResult(serviceResult);
+        }
+
+        [HttpPatch]
+        public async Task<IActionResult> Patch(int id,[FromBody] UpdatePostContentRequest updatePostContentRequest)
+        {
+            var serviceResult = await postService.UpdateContentAsync(id,updatePostContentRequest);
             return CreateActionResult(serviceResult);
         }
 
