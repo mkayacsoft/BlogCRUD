@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using BlogCRUD.Repository;
 using BlogCRUD.Repository.Categories;
-using BlogCRUD.Repository.Post;
 using BlogCRUD.Services.Categories.Create;
 using BlogCRUD.Services.Categories.Update;
-using BlogCRUD.Services.Post.Create;
-using BlogCRUD.Services.Post.Update;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace BlogCRUD.Services.Categories
 {

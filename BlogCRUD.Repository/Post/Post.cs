@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BlogCRUD.Repository.Categories;
+﻿using BlogCRUD.Repository.Categories;
 
 namespace BlogCRUD.Repository.Post
 {

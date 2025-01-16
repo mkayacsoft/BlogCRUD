@@ -1,7 +1,6 @@
-﻿using System.Net;
-using BlogCRUD.Services;
-using Microsoft.AspNetCore.Http;
+﻿using BlogCRUD.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace BlogCRUD.API.Controllers
 {

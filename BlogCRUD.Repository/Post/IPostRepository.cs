@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlogCRUD.Repository.Post
+﻿namespace BlogCRUD.Repository.Post
 {
     public interface IPostRepository:IGenericRepository<Post>
     {

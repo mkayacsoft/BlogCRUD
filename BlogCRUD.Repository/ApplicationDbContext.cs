@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BlogCRUD.Repository.Categories;
+using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using BlogCRUD.Repository.Categories;
 
 namespace BlogCRUD.Repository
 {

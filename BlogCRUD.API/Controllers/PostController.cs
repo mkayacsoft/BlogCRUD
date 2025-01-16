@@ -1,7 +1,6 @@
 ﻿using BlogCRUD.Services.Post;
 using BlogCRUD.Services.Post.Create;
 using BlogCRUD.Services.Post.Update;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogCRUD.API.Controllers

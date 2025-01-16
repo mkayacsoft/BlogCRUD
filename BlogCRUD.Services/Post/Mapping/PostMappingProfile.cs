@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using BlogCRUD.Services.Post;
 using BlogCRUD.Services.Post.Create;
 using BlogCRUD.Services.Post.Update;
 
